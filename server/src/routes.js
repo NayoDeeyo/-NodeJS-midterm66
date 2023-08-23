@@ -2,7 +2,7 @@ const AController = require("./controllers/AController");
 
 module.exports = (app) => {
     //que1
-    app.get("/que1", AController.post)
+    app.post("/que1", AController.create)
     //que2
-    app.get("/que2", AController.post)
+    app.post("/que2", AController.post)
 };
