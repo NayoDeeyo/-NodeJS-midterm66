@@ -4,6 +4,8 @@ module.exports = {
     create(req, res) {
         res.send(
             "บวกเลข : " +
+            req.params.NumId +
+            " คือ : " +
             JSON.stringify(req.body)
         );
     },
@@ -11,6 +13,8 @@ module.exports = {
     post(req, res) {
         res.send(
             "ครน. : " +
+            req.params.NumId +
+            " คือ : " +
             JSON.stringify(req.body)
         );
     },
