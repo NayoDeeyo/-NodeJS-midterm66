@@ -1,14 +1,8 @@
 const AController = require("./controllers/AController");
 
 module.exports = (app) => {
-  //get all user
-  app.get("/user", AController.index),
-  //create user
-  app.post("/user/:userId", AController.create),
-  //edit
-  app.put("/user/:userId", AController.put),
-  //delete
-  app.delete("/user/:userId", AController.delete),
-  //show by id
-  app.get("/user/:userId", AController.show);
+    //que1
+    app.post("/que1", AController.post)
+    //que2
+    app.post("/que2", AController.post)
 };
